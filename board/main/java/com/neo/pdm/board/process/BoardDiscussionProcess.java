@@ -14,12 +14,43 @@ public class BoardDiscussionProcess extends BaseAccessManager {
     }
 
     public List<DiscussionInfo> selectDiscussionList(){
-        List<DiscussionInfo> list = new ArrayList<DiscussionInfo>();
-        list.add(new DiscussionInfo());
-        list.add(new DiscussionInfo());
-        list.add(new DiscussionInfo());
-        list.add(new DiscussionInfo());
         
-        return list;
+        List<DiscussionInfo> discussionList = new ArrayList<DiscussionInfo>();
+        DiscussionInfo discussionInfo = new DiscussionInfo();
+        discussionInfo.setId("KJW");
+        discussionInfo.setDocumentTitle("KJW = DOCUMENT");
+        discussionInfo.setViewCnt("23,000");
+        discussionInfo.setInputDt("2017.10.20");
+        discussionList.add(discussionInfo);
+        
+        discussionInfo = new DiscussionInfo();
+        discussionInfo.setId("JIN WON");
+        discussionInfo.setDocumentTitle("=== DOCUMENT ===");
+        discussionInfo.setViewCnt("3,111");
+        discussionInfo.setInputDt("2017.01.20");
+        discussionList.add(discussionInfo);
+        
+        discussionInfo = new DiscussionInfo();
+        discussionInfo.setId("김진원");
+        discussionInfo.setDocumentTitle("김진원 = DOCUMENT");
+        discussionInfo.setViewCnt("23,000");
+        discussionInfo.setInputDt("2017.10.20");
+        discussionList.add(discussionInfo);
+        
+        discussionInfo = new DiscussionInfo();
+        discussionInfo.setId("이재인");
+        discussionInfo.setDocumentTitle("이재인 = DOCUMENT");
+        discussionInfo.setViewCnt("23,000");
+        discussionInfo.setInputDt("2017.10.20");
+        discussionList.add(discussionInfo);
+        
+        discussionInfo = new DiscussionInfo();
+        discussionInfo.setId("마일럽");
+        discussionInfo.setDocumentTitle("마일럽~~~~~~~~~~~~~~~~");
+        discussionInfo.setViewCnt("23,000");
+        discussionInfo.setInputDt("2017.10.20");
+        discussionList.add(discussionInfo);
+        
+        return discussionList;
     }
 }
